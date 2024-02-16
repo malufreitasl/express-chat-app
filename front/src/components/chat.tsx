@@ -1,7 +1,7 @@
-import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "../components/ui/textarea"
 import { ChevronRightIcon } from "@radix-ui/react-icons"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 
 export function Chat() {
     return (

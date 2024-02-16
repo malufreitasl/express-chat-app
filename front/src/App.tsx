@@ -1,13 +1,17 @@
 import { ChatPage } from "./pages/chatPage"
 import { Login } from "./pages/login"
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
-
   return (
     <>
-      <Login />
-      {/* <ChatPage /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/Chat' element={<ChatPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
