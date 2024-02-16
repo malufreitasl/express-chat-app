@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Chat } from '../components/chat'
 import { Messages } from '../components/messages'
 import { SideBar } from '../components/sideBar'
@@ -8,7 +9,11 @@ import {
     ResizablePanelGroup,
 } from "../components/ui/resizable"
 
-export function ChatPage() {
+export function ChatPage({userChats}) {
+
+
+
+    
     return (
         <>
             <div className='h-dvh p-4'>
