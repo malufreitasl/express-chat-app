@@ -26,7 +26,7 @@ export function Login() {
     return (
         <>
             {userChats.length >= 1 ? (
-                <ChatPage userChats={userChats} />
+                <ChatPage userChats={userChats} userName={user} />
             ) : (
                 <div className="flex flex-col h-dvh items-center content-center justify-center">
                 <div className="flex w-full max-w-sm items-center space-x-2">
